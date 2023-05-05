@@ -25,6 +25,7 @@ export function Navbar(){
                     className="rounded-circle"
                 >
                     <img src={shoppingCart} alt="Cart"/>
+                    {cartQuantity>0?(
                     <div 
                         className="rounded-circle bg-danger d-flex justify-content-center align-items-center" 
                         style={{
@@ -39,6 +40,7 @@ export function Navbar(){
                     >
                         {cartQuantity}
                     </div>
+                    ):null}
                 </Button>
             </Container>
         </NavbarBs>
